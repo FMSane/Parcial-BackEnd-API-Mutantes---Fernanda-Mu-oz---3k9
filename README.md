@@ -34,6 +34,20 @@ Este endpoint recibe en el cuerpo de la petición un ADN y devuelve si es mutant
 }
 
 ```
+Ejemplo de una petición que devuelve "true", lo que significa que el ADN corresponde al de un mutante:
+
+```json
+{
+    "dna": [
+        "ATGCGA",
+        "ATGTCA",
+        "TCTAGA",
+        "ATCTAA",
+        "CCATTA",
+        "TCTCTT"
+    ]
+}
+```
 
 Las posibles respuestas se listan a continuación:
 ```json

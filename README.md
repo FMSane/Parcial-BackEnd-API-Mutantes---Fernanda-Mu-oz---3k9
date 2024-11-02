@@ -5,6 +5,8 @@ El ejercicio consiste en analizar un ADN enviado al endpoint "/mutant" y verific
 
 Puedes realizar las pruebas mediante un enlace de render obteniéndolo <a href="https://parcial-backend-api-mutantes-fernanda.onrender.com">aquí</a>.
 
+La arquitectura actual utiliza un modelo cliente-servidor. El cliente interactúa con el servidor a través de endpoints, adjuntando un cuerpo a la solicitud cuando es necesario. Esta solución podría escalarse mediante el uso de Redis para almacenar en caché las solicitudes, lo que incrementaría la capacidad del servidor. Al almacenar en memoria los datos en un formato de clave-valor, Redis permite que las solicitudes recurrentes se sirvan rápidamente, mejorando así la velocidad de acceso.
+
 ## Ejecución del proyecto
 1. Clonar el repositorio.
 ```sh
